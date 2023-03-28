@@ -1,0 +1,36 @@
+MVC Spring Boot
+
+CLIENT (USER) -> CONTROLLER -> MODEL -> (DATABASE) -> MODEL -> CONTROLLER -> VIEW 
+                            -> VIEW
+
+CLIENT (USER) -> REACT JS -> API 
+                          -> CONTROLLER -> MODEL -> (DATABASE) -> MODEL -> CONTROLLER
+
+Status Code
+-> 1xx
+-> 2xx -> Success (200, 204)
+-> 3xx
+-> 4xx -> Resource (400, 401, 403, 404)
+-> 5xx -> Server (500)
+
+HttpRequest
+- GET 
+- POST 
+- PUT / PATCH
+- DELETE
+
+{
+    "message" : "data berhasil didapatkan",
+    "statusCode" : 200,
+    "data" : [
+        {
+
+        }
+    ]
+}
+
+{
+    "message" : "data tidak ditemukan",
+    "statusCode" : 200,
+    "data" : null
+}
